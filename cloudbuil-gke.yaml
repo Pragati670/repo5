@@ -8,7 +8,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/${_PROJECT_ID}/${_CINAME}:${_VERSION}']
 #kubectl set image deploymentname deployment/deployment-2 myapp-sha256-1 (container name old one)
-  - name : 'gcr.io/cloud builders/kubectl'
+  - name : 'gcr.io/cloud-builders/kubectl'
     args: 
     - 'set'
     - 'image'
